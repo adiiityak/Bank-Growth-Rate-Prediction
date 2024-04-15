@@ -8,6 +8,7 @@ Machine learning project aimed at Bank Growth Rate Prediction using the Random F
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
+- [Model Screenshots](#model-screenshots)
 
 ## Installation
 To use this project locally, follow these steps:
