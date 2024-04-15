@@ -76,7 +76,7 @@ I've included screenshots from my Jupyter Notebook to showcase various aspects o
 ![1 2](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/715a92c2-f40f-4fb5-91df-c60325d9f05d)
 ![1 3](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/68ad0211-db9a-439d-8a05-33e00575c5e4)
 
-This screenshot demonstrates the feature importance plot generated from the Random Forest model, highlighting the key factors influencing customer churn prediction.
+This screenshot demonstrates the feature importance plot generated from the Random Forest model, highlighting the key factors influencing prediction.
 ![3 2](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/845c072f-0ee3-4b32-89e7-ffe8969bb524)
 ![3 1](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/0320f13d-bd51-4225-baf8-a38b68303836)
 
