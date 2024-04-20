@@ -4,7 +4,7 @@ Machine learning project aimed at Bank Growth Rate Prediction using the Random F
 
 ## Table of Contents
 - [Installation](#installation)
-- [Steps to Execute](#usage)
+- [Steps to Execute](#steps-to-execute)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
@@ -32,9 +32,16 @@ To use this project locally, follow these steps:
 The web application allows users to input customer data (such as credit score, age, tenure, balance, etc.) and get predictions. Users can input their data via the web interface and receive predictions in real-time.
 
 To predict growth:
+### Case 1
 1. Fill in the required fields with customer information.
 2. Click on the "Predict" button.
 3. The application will generate a prediction based on the input data using the Random Forest algorithm.
+
+### Case 2
+1. Click on Browse Files.
+2. Upload your dataset directly into the streamlit.
+3. The application will generate a prediction based on the dataset and it will give percentage of member who stays in the bank.
+
 
 ## Project Structure
 The project structure is organized as follows:
