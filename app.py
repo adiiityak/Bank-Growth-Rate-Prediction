@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 # Load the model
 model = pickle.load(open('Bank_Growth_Rate_Prediction.pkl', 'rb'))
 
-# Function to predict if member will leave the bank
+
 def bank_groth_rate_prediction(input_data):
     input_data_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_numpy_array.reshape(1, -1)
@@ -24,7 +24,7 @@ def bank_groth_rate_prediction(input_data):
 def main():
     st.title('Bank Growth Rate Prediction Web App')
     
-    # Sidebar for manual prediction
+   
     st.sidebar.title('Predict Bank Growth Rate')
     st.sidebar.write("Enter data to predict if a member will leave the bank or not:")
     age = st.sidebar.text_input('Enter age')
@@ -39,7 +39,7 @@ def main():
     geography_Spain = st.sidebar.text_input('From Spain (1 or 0)')
     gender_Male = st.sidebar.text_input('Is the person male? (1 or 0)')
     
-    # Predict bank growth rate
+    
     if st.sidebar.button('Predict'):
         prediction = bank_groth_rate_prediction([creditscore, age, tenure, balance, numOfProducts, hasCrCard, isActiveMember, estimatedSalary, geography_Germany, geography_Spain, gender_Male])
         if prediction == 0:
@@ -47,39 +47,39 @@ def main():
         else:
             st.sidebar.success("The member will leave the bank")
     
-    # Add file uploader for CSV file
+    
     uploaded_file = st.file_uploader("Upload CSV file", type=['csv'])
     
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
         
-        # Display uploaded data
+        
         st.write("Uploaded Data:")
         st.write(df)
         
-        # Perform prediction for each member
+        
         predictions = []
         for index, row in df.iterrows():
             input_data = row.drop('Exited').tolist()  # Exclude 'Exited' column from input
             prediction = bank_groth_rate_prediction(input_data)
             predictions.append(prediction)
         
-        # Add predictions to DataFrame
+        
         df['Prediction'] = predictions
         
-        # Count members who leave and who stay based on prediction
+       
         leave_count = (df['Prediction'] == 1).sum()
         stay_count = len(df) - leave_count
         
-        # Calculate percentage of members who stay
+        
         stay_percentage = (stay_count / len(df)) * 100
         
-        # Display counts and percentage
+        
         st.write(f"Number of members who left the bank: {leave_count}")
         st.write(f"Number of members who stayed in the bank: {stay_count}")
         st.write(f"Percentage of members who stayed in the bank: {stay_percentage:.2f}%")
         
-        # Display predictions
+       
         st.write("Predictions:")
         st.write(df[['Prediction']])
 
