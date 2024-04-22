@@ -36,11 +36,15 @@ To predict growth:
 1. Fill in the required fields with customer information.
 2. Click on the "Predict" button.
 3. The application will generate a prediction based on the input data using the Random Forest algorithm.
+![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/b83c93fd-d2c3-49bf-a178-907ead06d0f8)
+![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/24d94d52-b83f-4153-92e0-364c31126e69)
 
 ### Case 2
 1. Click on Browse Files.
 2. Upload your dataset directly into the streamlit.
 3. The application will generate a prediction based on the dataset and it will give percentage of member who stays in the bank.
+![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/48e69f26-29b9-44d5-8ed3-473cf2afa6a1)
+
 
 
 ## Project Structure
@@ -89,5 +93,5 @@ This screenshot demonstrates the feature importance plot generated from the Rand
 ![3 1](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/0320f13d-bd51-4225-baf8-a38b68303836)
 
 #### Model Evaluation Metrics
-![3](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/1debf226-a6dc-4eaf-865d-9e7297cd99b8)
+![3](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/20a9e369-8d8b-4d16-8ea8-97a6a062f902)
 
