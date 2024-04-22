@@ -32,14 +32,14 @@ To use this project locally, follow these steps:
 The web application allows users to input customer data (such as credit score, age, tenure, balance, etc.) and get predictions. Users can input their data via the web interface and receive predictions in real-time.
 
 To predict growth:
-### Case 1
+### Method 1
 1. Fill in the required fields with customer information.
 2. Click on the "Predict" button.
 3. The application will generate a prediction based on the input data using the Random Forest algorithm.
 ![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/b83c93fd-d2c3-49bf-a178-907ead06d0f8)
 ![image](https://github.com/adiiityak/Bank-Growth-Rate-Prediction/assets/83272901/24d94d52-b83f-4153-92e0-364c31126e69)
 
-### Case 2
+### Method 2
 1. Click on Browse Files.
 2. Upload your dataset directly into the streamlit.
 3. The application will generate a prediction based on the dataset and it will give percentage of member who stays in the bank.
